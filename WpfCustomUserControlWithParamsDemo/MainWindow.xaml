@@ -1,4 +1,18 @@
-﻿<Window x:Class="WpfCustomUserControlWithParamsDemo.MainWindow"
+﻿
+<!--useful links
+    
+    how to add images
+    https://wpf.2000things.com/2014/07/03/1107-accessing-an-embedded-resource-using-a-uri/
+    
+    how to bind custom dependency property in custom user control
+    https://stackoverflow.com/questions/16985382/binding-to-usercontrol-dependencyproperty
+    
+    MouseEnter/Leave events don't fire over empty regions in custom user control
+    https://stackoverflow.com/questions/28064505/wpf-click-on-usercontrols-background-does-not-fire
+    
+    -->
+    
+<Window x:Class="WpfCustomUserControlWithParamsDemo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
