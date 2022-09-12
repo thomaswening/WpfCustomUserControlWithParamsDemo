@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfCustomUserControlWithParamsDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCustomUserControlWithParamsDemo"
+        
+        xmlns:uc="clr-namespace:WpfCustomUserControlWithParamsDemo.UserControls"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--Import namespace UserControls under alias uc as above-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+
+        <!--Initialise the custom user control using the dependency properties just as you would normally-->
+        <uc:ImageRowUC Grid.Row="1" Grid.Column="1"
+            ImgPath="../Images/scr00048.png" AltImgPath="../Images/scr00038.png" ImgTitle="test 1"/>
+        <uc:ImageRowUC Grid.Row="2" Grid.Column="1"
+            ImgPath="../Images/scr00048.png" AltImgPath="../Images/scr00038.png" ImgTitle="test 2"/>
+        <uc:ImageRowUC Grid.Row="3" Grid.Column="1"
+            ImgPath="../Images/scr00048.png" AltImgPath="../Images/scr00038.png" ImgTitle="test 3"/>
+    </Grid>
+</Window>
